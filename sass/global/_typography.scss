@@ -1,0 +1,43 @@
+@use "../util" as u;
+
+.password-generator__title {
+  font-family: u.$fontKarla;
+  font-size: clamp(u.rem(30), 5vw, u.rem(40));
+  line-height: u.rem(35);
+  letter-spacing: -2.5%;
+  color: var(--title-color);
+
+  @include u.breakpoint(large) {
+    line-height: u.rem(40);
+  }
+}
+
+.span {
+  color: var(--title-span-color);
+}
+
+.password-generator__paragraph {
+  font-family: u.$fontInter;
+  font-size: clamp(u.rem(15), 2.5vw, u.rem(20));
+  color: var(--paragraph-color);
+}
+
+.form__btn {
+  font-family: u.$fontInter;
+  font-size: u.rem(16);
+  color: var(--title-color);
+}
+
+.form__input {
+  font-family: u.$fontInter;
+  font-size: u.rem(16);
+  color: var(--dots-color);
+  text-align: center;
+}
+
+#passGen1-el,
+#passGen2-el,
+#passGen3-el,
+#passGen4-el{
+  color: var(--password-color);
+}

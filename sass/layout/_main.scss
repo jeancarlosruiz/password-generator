@@ -1,0 +1,47 @@
+@use "../util" as u;
+
+body {
+  width: 100%;
+  background-color: var(--body-bg);
+}
+
+.main {
+  width: min(90%, u.rem(550));
+  background-color: var(--main-bg);
+  margin: u.rem(50) auto 0;
+  padding-top: u.em(90);
+  padding-right: u.em(30);
+  padding-bottom: u.em(40);
+  padding-left: u.em(30);
+
+  .password-generator__paragraph {
+    margin-top: u.em(10);
+    margin-bottom: u.em(51);
+  }
+
+  .line {
+    color: var(--line-color);
+    margin: u.em(35) 0;
+  }
+
+  .form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    gap: u.rem(15);
+
+    @include u.breakpoint(large) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto auto;
+    }
+
+    .form__input {
+      width: 100%;
+      background-color: var(--input-color);
+      border: none;
+        padding: u.em(7) u.em(8);
+    }
+  }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/key-solid.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Karla:wght@800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="dist/styles.css" />
+  <script src="js/app.js" defer></script>
+  <title>Password Generate</title>
+</head>
+
+<body>
+  <main class="main">
+    <div class="password-generator">
+      <h2 class="password-generator__title">
+        Generate a <span class="span">random password</span>
+      </h2>
+      <p class="password-generator__paragraph">
+        Never use an insecure password again.
+      </p>
+      <button class="form__btn" type="button" onclick="randomPass()"><img src="images/Lightning bolt.svg" alt="Lightning Bolt"> Generate password</button>
+      <hr class="line"/>
+      <div class="form">
+        <input class="form__input" type="text" name="" placeholder="Create Password" id="passGen1-el" readonly="" />
+        <input class="form__input" type="text" name="" placeholder="Create Password" id="passGen2-el" readonly="" />
+        <input class="form__input" type="text" name="" placeholder="Create Password" id="passGen3-el" readonly="" />
+        <input class="form__input" type="text" name="" placeholder="Create Password" id="passGen4-el" readonly="" />
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <!-- please complete this section with your profile info. -->
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+@use "../util" as u;
+
+.form__btn {
+  background-color: var(--btn-color);
+  display: flex;
+  align-items: center;
+  gap: u.rem(12);
+  padding: u.em(9) u.em(17);
+  border: none;
+  border-radius: u.rem(5);
+  cursor: pointer;
+  transition: all 0.5 ease-in;
+
+  &:hover {
+    background-color: var(--btn-color-hover);
+  }
+}
